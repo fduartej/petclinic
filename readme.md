@@ -9,3 +9,9 @@ dotnet ef migrations add InitialMigration --context petclinic.Data.ApplicationDb
 dotnet ef database update
 
 dotnet ef migrations remove
+
+## Modificar el login
+
+dotnet aspnet-codegenerator identity -dc petclinic.Data.ApplicationDbContext --files "Account.Register;Account.Login"
+
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 7.0.10
