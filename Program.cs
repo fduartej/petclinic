@@ -7,6 +7,8 @@ using System.Diagnostics;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddHealthChecks();
+
 // Add services to the container.
 var connectionString=Environment.GetEnvironmentVariable("RENDER_POSTGRES_CONNECTION");
 if (string.IsNullOrEmpty(connectionString))
@@ -47,5 +49,7 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
+
+app.MapHealthChecks("/health");
 
 app.Run();
