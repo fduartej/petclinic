@@ -15,3 +15,7 @@ dotnet ef migrations remove
 dotnet aspnet-codegenerator identity -dc petclinic.Data.ApplicationDbContext --files "Account.Register;Account.Login"
 
 dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 7.0.10
+
+## Generar un CRUD
+
+dotnet aspnet-codegenerator controller -name ProductoController -m Producto -dc petclinic.Data.ApplicationDbContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries
