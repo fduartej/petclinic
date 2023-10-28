@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using petclinic.Models;
 
-namespace petclinic.Controllers;
+namespace petclinic.Controllers.UI;
 
 public class HomeController : Controller
 {

@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Dynamic;
 using petclinic.Models;
 
-namespace petclinic.Controllers
+namespace petclinic.Controllers.UI
 {
 
     public class CarritoController : Controller

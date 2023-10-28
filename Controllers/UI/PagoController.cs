@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using petclinic.Models;
 
-namespace petclinic.Controllers
+namespace petclinic.Controllers.UI
 {
     public class PagoController : Controller
     {
